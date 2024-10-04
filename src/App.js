@@ -1,13 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar';
 
 function App() {
+  // const [data, setData] = useState([])
+
+  // useEffect(() =>{
+  //   fetch("http://localhost:4000/jokes")
+  //     .then(r => r.json())
+  //     .then(data => setData(data))
+  //     .catch(error => console.error(error))
+  // }, [])
+
   return (
     <div className="App">
       <header className="App-header">
+        <NavBar />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          React...ionary Dad Jokes
         </p>
         <a
           className="App-link"
